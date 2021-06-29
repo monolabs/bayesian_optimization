@@ -13,12 +13,50 @@ Proposed MAB-BO has the following algorithm for batched observations:
 Tests are performed on negated modified Ackley function based on the same paper with minor modification to make the objective values shift between different categories smaller and having the category effect reversed. Global optima is 0 at [0]\*d where d is the number of dimension and is achieved with category c = c_max with c ∈ {0, 1, 2, ..., c_max}
 
 
-### Test 1 - vs One-Hot encoding
+### Test 1 - vs One-Hot encoding (OH-BO)
 
-General parameters:
-* Ackley domain: 
+General params:
+* Ackley domain: [-1]\*d to [3]\*d
 * Surrogate model: Gaussian Process
 * Covariance kernel: Matern (nu = 0.5)
 * d: 5 (dimension of continuous variables)
+* \# of categories: 5
 * \# of observations per iteration: 1
 * \# of iterations: 100
+* \# of trials: 5
+
+MAB-BO params:
+* \# of Thompson samples: 5000
+* sampling method: cholesky
+
+OH-BO params:
+* acquisition function: qEI
+
+Results:
+
+![image](https://user-images.githubusercontent.com/58320929/123742895-00f07f80-d8df-11eb-8814-ab01970853b4.png)
+
+
+### Test 2 - vs One-Hot encoding (OH-BO) with wider domain
+
+General params:
+* Ackley domain: [-10]\*d to [10]\*d
+* Surrogate model: Gaussian Process
+* Covariance kernel: Matern (nu = 0.5)
+* d: 5 (dimension of continuous variables)
+* \# of categories: 5
+* \# of observations per iteration: 1
+* \# of iterations: 100
+* \# of trials: 5
+
+MAB-BO params:
+* \# of Thompson samples: 5000
+* sampling method: cholesky
+
+OH-BO params:
+* acquisition function: qEI
+
+Results:
+
+![image](https://user-images.githubusercontent.com/58320929/123743078-4614b180-d8df-11eb-860c-3782450ac74d.png)
+
