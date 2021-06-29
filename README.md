@@ -13,6 +13,8 @@ Proposed MAB-BO has the following algorithm for batched observations:
 
 ### Test 1
 
-Surrogate model: Gaussian Process
-Covariance kernel: Matern (nu = 0.5)
-\# 
+General parameters:
+* Surrogate model: Gaussian Process
+* Covariance kernel: Matern (nu = 0.5)
+* \# of observations per iteration: 1
+* \#  
