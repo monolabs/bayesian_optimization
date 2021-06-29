@@ -6,5 +6,12 @@ This work is based on a research paper by Dang Nguyen, Sunil Gupta, Santu Rana, 
 
 The Bayesian Optimization used is BoTorch for Python. Notebooks can be found in 'notebooks' folder.
 
+Proposed MAB-BO has the following algorithm for batched observations:
 ![image](https://user-images.githubusercontent.com/58320929/123740893-be797380-d8db-11eb-90cd-f684aaa4dd9e.png)
 
+
+### Test 1
+
+Surrogate model: Gaussian Process
+Covariance kernel: Matern (nu = 0.5)
+\# 
