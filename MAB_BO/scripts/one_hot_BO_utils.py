@@ -43,8 +43,7 @@ def modified_neg_ackley(X: torch.Tensor, C: int) -> torch.Tensor:
     d = X.shape[-1] - C
     
     c = torch.argmax(X[:, :C], dim=-1, keepdims=True)
-    c = C - c - 1
-    Z = X[..., 1:] + c
+    Z = X[..., C:] + c
     
     first_term = -20 * torch.exp(-0.2 * torch.sqrt(1/(d) * (Z**2).sum(dim=-1, keepdim=True)))
     second_term = - torch.exp(1/(d) * (torch.cos(2*np.pi*Z)).sum(dim=-1, keepdim=True))

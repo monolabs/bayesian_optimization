@@ -41,7 +41,6 @@ def modified_neg_ackley(X: torch.Tensor) -> torch.Tensor:
     m, d = X.shape
     d -= 1    # only the continuous variables
     c = torch.round(X[..., 0:1])
-    c = c.max() - c - 1    # reversing category
     Z = X[..., 1:] + c
     
     first_term = -20 * torch.exp(-0.2 * torch.sqrt(1/(d) * (Z**2).sum(dim=-1, keepdim=True)))
