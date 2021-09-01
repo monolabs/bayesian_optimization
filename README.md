@@ -34,7 +34,7 @@ OH-BO params:
 
 Results:
 
-![image](https://user-images.githubusercontent.com/58320929/123742895-00f07f80-d8df-11eb-8814-ab01970853b4.png)
+![image](https://user-images.githubusercontent.com/58320929/131598294-d4b8c686-6656-49e0-81c5-bbe51ba7d96d.png)
 
 
 ### Test 2 - vs One-Hot encoding (OH-BO) with wider domain
@@ -58,5 +58,5 @@ OH-BO params:
 
 Results:
 
-![image](https://user-images.githubusercontent.com/58320929/123743078-4614b180-d8df-11eb-860c-3782450ac74d.png)
+![image](https://user-images.githubusercontent.com/58320929/131598403-1f82af6e-7e5d-489a-812f-b48101f74128.png)
 
