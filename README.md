@@ -1,4 +1,4 @@
-# Multi-Armed Bandit - Bayesian Optimization (TODO: Update!)
+# Multi-Armed Bandit - Bayesian Optimization
 
 This project is to explore Multi-Armed Bandit Bayesian Optimization as a method to optimize black-box functions with mixed categorical and continuous variables.
 
